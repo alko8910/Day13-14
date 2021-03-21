@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <title>Galery's page</title>
+  </head>
+  <body>
+  <div class="row">
+      <div class="column" >
+        
+        <div class="first">
+          <h1>Marathon</h1>
+          <img src="../images/img1.jpg" alt="Marathon" class="img-modal" onclick="openModal();currentSlide(1)" onmouseover="mojaFunkcija()" onmouseout="mojaFunkcija1()">
+        </div>
+        <h1>Weight Lifting</h1> 
+        <div class="second">
+          <img src="../images/img5.jpg" alt="Weight Lifting" class="img1" onclick="openModal();currentSlide(5)" onmouseover="mojaFunkcija2()" onmouseout="mojaFunkcija3()">
+        </div>
+          <h1>Jogging</h1>
+          <div class="treci">
+          <img src="../images/img8.jpg" alt="Jogging" class="img2" onclick="openModal();currentSlide(8)" onmouseover="mojaFunkcija4()" onmouseout="mojaFunkcija5()">
+        </div>
+      </div>
+      <div class="column">
+        <h1>Gymnastics</h1>
+        <div class="cetvrti">
+          <img src="../images/img2.jpg" class="img3" alt="Gymnastics"onclick="openModal();currentSlide(2)" onmouseover="mojaFunkcija6()" onmouseout="mojaFunkcija7()">
+        </div>
+          <h1>Basketball</h1>
+          <div class="peti">
+          <img src="../images/img6.jpg" class="img4" alt="Basketball"onclick="openModal();currentSlide(6)" onmouseover="mojaFunkcija8()" onmouseout="mojaFunkcija9()">
+        </div>
+      </div>
+      <div class="column">
+        <h1>Climbing</h1>
+        <div class="sesti">
+        <img src="../images/img3.jpg" class="img5" alt="Climbing" onclick="openModal();currentSlide(3)" onmouseover="mojaFunkcija10()" onmouseout="mojaFunkcija11()">
+      </div>
+        <h1>Swimming</h1>
+        <div class="sedmi">
+        <img src="../images/img7.jpg" class="img6" alt="Swimming" onclick="openModal();currentSlide(7)" onmouseover="mojaFunkcija12()" onmouseout="mojaFunkcija13()">
+      </div>
+        <h1>Running</h1>
+      <div class="osmi">
+        <img src="../images/img9.jpg" class="img7" alt="Running" onclick="openModal();currentSlide(9)" onmouseover="mojaFunkcija14()" onmouseout="mojaFunkcija15()">
+      </div>
+      </div>
+       <div class="column">
+        <h1>Skiing</h1>
+        <div class="deveti">
+        <img src="../images/img4.jpg" class="img8" alt="Skiing" onclick="openModal();currentSlide(4)" onmouseover="mojaFunkcija16()" onmouseout="mojaFunkcija17()">
+      </div>
+        <h1>Cycling</h1>
+        <div class="deseti">
+        <img src="../images/img10.jpg" class="img9" alt="Cycling" onclick="openModal();currentSlide(10)" onmouseover="mojaFunkcija18()" onmouseout="mojaFunkcija19()">
+      </div>
+      </div>
+  </div>
+  
+
+
+  
+<!-- MODAL -->
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <iframe class="iframe" src="image01.html"></iframe>
+    </div>
+
+    <div class="mySlides">
+      <span class="close">&times;</span>
+      <iframe class="iframe" src="image02.html"></iframe>
+    </div>
+
+    <div class="mySlides">
+      <iframe class="iframe" src="image03.html"></iframe>
+    </div>
+
+    <div class="mySlides">
+      <iframe class="iframe" src="image04.html"></iframe>
+    </div>
+ 
+  
+      <div class="mySlides">
+        <iframe class="iframe" src="image05.html"></iframe>
+      </div>
+  
+      <div class="mySlides">
+        <iframe class="iframe" src="image06.html"></iframe>
+      </div>
+  
+      <div class="mySlides">
+        <iframe class="iframe" src="image07.html"></iframe>
+      </div>
+  
+      <div class="mySlides">
+        <iframe class="iframe" src="image08.html"></iframe>
+      </div>
+      <div class="mySlides">
+        <iframe class="iframe" src="image09.html"></iframe>
+      </div>
+  
+      <div class="mySlides">
+        <iframe class="iframe" src="image10.html"></iframe>
+      </div>
+
+      <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <!--<div class="column">
+      <img class="demo" src="../images/img1.jpg" onclick="currentSlide(1)" alt="Nat">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+    </div>
+    <div class="column">
+      <img class="demo" src="img5.jpg" onclick="currentSlide(5)" alt="Lights">
+    </div>
+    <div class="column">
+      <img class="demo" src="img6.jpg" onclick="currentSlide(6)" alt="Lights">
+    </div>
+    <div class="column">
+      <img class="demo" src="img7.jpg" onclick="currentSlide(7)" alt="Lights">
+    </div>
+    <div class="column">
+      <img class="demo" src="img8.jpg" onclick="currentSlide(8)" alt="Lights">
+    </div>
+    <div class="column">
+      <img class="demo" src="img9.jpg" onclick="currentSlide(9)" alt="Lights">
+    </div>
+    <div class="column">
+      <img class="demo" src="img10.jpg" onclick="currentSlide(10)" alt="Lights">
+    </div>
+  </div>
+</div>
+
+-->
+
+
+
+  <script src="../scripts/index.js"></script>
+
+  </body>
+</html>
